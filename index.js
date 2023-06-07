@@ -3,6 +3,7 @@ async function showWeather(){
     let city = "Kolkata";
     let data = await fetch(`https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${apiKey}`)
     .then(response => response.json());
-    let Kolkata = data.main.temp;
-    return Kolkata;
+    let insertPara = document.createElement('p');
+    insertPara.innerText = data.main.temp;
+    document.body.appendChild(insertPara)
 }

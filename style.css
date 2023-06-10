@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: linear-gradient(68deg, #000000 0%, #ffffff 100%);
+    background-image: linear-gradient(68deg, #1f074d 0%, #72c5df 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
@@ -21,21 +21,20 @@ body{
     
 }
 .weatherCart{
-    min-width: 40rem;
     text-align: center;
 }
 .topHeading{
     font-family: 'DM Sans', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400;
     text-shadow: 2px 6px 20px  black;
 }
 .activeOption{
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-family: 'DM Sans', sans-serif;
-    font-size: large;
+    font-size: small;
     
 }
 .activeOption1{
@@ -47,12 +46,12 @@ body{
 .contentBox{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     position: relative;
 }
 /* search Box section */
 .searchSection{
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -97,7 +96,7 @@ body{
 }
 .cityName{
     font-family: 'DM Sans', sans-serif;
-    font-size: xxx-large;
+    font-size: xx-large;
 }
 .weatherImg{
     width: 5rem;
@@ -109,7 +108,7 @@ body{
 }
 .weatherTemparature{
     font-family: 'DM Sans', sans-serif;
-    font-size: xxx-large;
+    font-size: xx-large;
 }
 .weatherDetails{
     display: flex;
@@ -165,7 +164,14 @@ body{
     transition-delay: 100ms;
     transition-timing-function: ease-in-out;
 }
-
+.loadingImg{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 10%;
+    left: 44%;
+    scale: 0;
+}
 /* Js required CSS */
 .currentTab{
     background-color: #000000;
